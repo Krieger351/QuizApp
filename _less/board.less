@@ -1,0 +1,48 @@
+.main{
+  .container;
+  height:100%;
+  width:100%;
+  .board{
+    height:80%;
+    width:100%;
+    .category{
+      width:20%;
+      height:100%;
+      display:inline-block;
+      .title{
+        font-weight: 700;
+        background-color: @gray;
+        padding:@padding-small-vertical @padding-small-horizontal;
+        border: solid 2px darken(@gray, 20%);
+      }
+      .question{
+        height:15%;
+        display:block;
+        background-color: lighten(@gray,20%);
+        border: solid 2px darken(@gray, 20%);
+        padding:10px;
+        text-align: center;
+      }
+    }
+  }
+  .teams{
+    .team{
+      display: inline-block;
+      width:20%;
+      padding:@padding-small-vertical @padding-small-horizontal;
+      font-weight: 700;
+      &.red{
+        background-color: @red;
+      }
+      &.blue{
+        background-color: @blue;
+      }
+      &.green{
+        background-color: @green;
+      }
+      &.orange{
+        background-color: @orange;
+      }
+    }
+  }
+}

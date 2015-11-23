@@ -1,0 +1,28 @@
+doctype html
+html(lang="en",ng-app='QuizApp')
+  head
+      title Quiz App
+      link(rel="stylesheet" type="text/css" href="css/style.css")
+      meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+  body.main(ng-controller="BoardCtrl")
+    
+    .board 
+      h1 Small Group Quiz
+      .category(ng-repeat='(category,questions) in board') 
+        .title {{ category }}
+        .question(ng-repeat='(value,question) in questions') {{ value }}
+    .first First Buzz: {{ firstBuzz }}
+    .teams
+      h4 Scores
+      .team.red Red 
+        .score {{ scores.red }}
+      .team.blue Blue 
+        .score {{ scores.blue }}
+      .team.green Green 
+        .score {{ scores.green }}
+      .team.orange Orange  
+        .score  {{ scores.orange }}
+    
+    script(src="/socket.io/socket.io.js")
+    script(src="/js/vendor/angular/angular.js")
+    script(src="./js/QuizApp.js")  

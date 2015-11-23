@@ -1,0 +1,23 @@
+doctype html
+html(lang="en",ng-app='QuizApp')
+  head
+      title Quiz App
+      link(rel="stylesheet" type="text/css" href="css/style.css")
+      meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+  body.buzzer(ng-controller="BuzzerCtrl")
+    .buttons(ng-hide='team')
+      .button(ng-click="joinTeam('Red')").red 
+        span Red
+      .button(ng-click="joinTeam('Blue')").blue 
+        span Blue
+      .button(ng-click="joinTeam('Green')").green 
+        span Green
+      .button(ng-click="joinTeam('Orange')").orange 
+        span Orange
+    .buzzer(ng-show='team') 
+      .buzz(ng-click="buzzIn(team)", ng-class="{red:team == 'Red',blue:team == 'Blue',green:team == 'Green',orange:team == 'Orange'}") Buzz
+      .back(ng-click='back(team)') Back
+    
+    script(src="/socket.io/socket.io.js")
+    script(src="/js/vendor/angular/angular.js")
+    script(src="./js/QuizApp.js")  
