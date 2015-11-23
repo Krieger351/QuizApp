@@ -18,4 +18,8 @@ angular.module('QuizApp.Buzzer', [])
     $scope.team = '';
   }
 
+  socket.on('restart',function(data){
+    $scope.team = '';
+    $scope.$apply();
+  })
 }])

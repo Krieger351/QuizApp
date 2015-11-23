@@ -1,7 +1,7 @@
 doctype html
 html(lang="en",ng-app='QuizApp')
   head
-      title Quiz App
+      title Board
       link(rel="stylesheet" type="text/css" href="css/style.css")
       meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
   body.main(ng-controller="BoardCtrl")
@@ -10,7 +10,7 @@ html(lang="en",ng-app='QuizApp')
       h1 Small Group Quiz
       .category(ng-repeat='(category,questions) in board') 
         .title {{ category }}
-        .question(ng-repeat='(value,question) in questions') {{ value }}
+        .question(ng-repeat='(value,question) in questions',ng-click='chooseQuestion(category, value, question)', ng-class="{red:question.team == 'Red',blue:question.team == 'Blue',green:question.team == 'Green',orange:question.team == 'Orange',white:question.team == 'None'}") {{ value }}
     .first First Buzz: {{ firstBuzz }}
     .teams
       h4 Scores

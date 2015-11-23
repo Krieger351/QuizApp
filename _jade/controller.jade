@@ -1,0 +1,44 @@
+doctype html
+html(lang="en",ng-app='QuizApp')
+  head
+      title Controller
+      link(rel="stylesheet" type="text/css" href="css/style.css")
+      meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+  body.controller(ng-controller="ControllerCtrl")
+    .first First Buzz: {{ firstBuzz }}
+    form.form-horizontal
+      h3 Scores
+      .form-group
+        label.col-sm-2 Red
+        .col-sm-10
+          input.form-control(ng-model="scores.red",ng-blur="pushScores()")
+      .form-group
+        label.col-sm-2 Blue
+        .col-sm-10
+          input.form-control(ng-model="scores.blue",ng-blur="pushScores()")
+      .form-group
+        label.col-sm-2 Green
+        .col-sm-10
+          input.form-control(ng-model="scores.green",ng-blur="pushScores()")
+      .form-group
+        label.col-sm-2 Orange
+        .col-sm-10
+          input.form-control(ng-model="scores.orange",ng-blur="pushScores()")
+      button.btn.btn-lg.btn-block.btn-blue(ng-click="clear()") Clear
+    h3 Question
+    p category {{ chosenQuestion.category}}
+    p value {{ chosenQuestion.value}}
+    p Answer: {{ chosenQuestion.question.answer }}
+    p Question: {{ chosenQuestion.question.question }}
+    .buttons
+      button.btn.btn-lg.btn-red(ng-click='giveQuestion("Red")') Red
+      button.btn.btn-lg.btn-blue(ng-click='giveQuestion("Blue")') Blue
+      button.btn.btn-lg.btn-green(ng-click='giveQuestion("Green")') Green
+      button.btn.btn-lg.btn-orange(ng-click='giveQuestion("Orange")') Orange
+      button.btn.btn-lg.btn-silver(ng-click='giveQuestion("None")') None
+      
+    button.btn.btn-lg.btn-aqua(ng-click='restart()') RESTART
+    
+    script(src="/socket.io/socket.io.js")
+    script(src="/js/vendor/angular/angular.js")
+    script(src="./js/QuizApp.js")  

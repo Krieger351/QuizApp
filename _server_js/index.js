@@ -7,16 +7,16 @@ var settings = require('./settings'),
 
 var data = require('./data')
 
-app.use(express.static(path.normalize(__dirname + settings.static_path)));
-app.use('/data',data);
-
-
 var scores = {
   red:0,
   blue:0,
   green:0,
   orange:0
 }
+
+app.use(express.static(path.normalize(__dirname + settings.static_path)));
+app.use('/data',data);
+
 
 io.sockets.on('connection', function (socket) {
 
@@ -36,6 +36,31 @@ io.sockets.on('connection', function (socket) {
 
     socket.on('getScores',function(){
       io.to('GameParts').emit('scoreUpdate', scores);
+    })
+
+    socket.on('updateScores',function(data){
+      scores = data.scores;
+      io.to('GameParts').emit('scoreUpdate', scores);
+    })
+    socket.on('clear',function(){
+      io.to('GameParts').emit('clear');
+    })
+    socket.on('choseQuestion',function(data){
+      io.to('Controller').emit('choseQuestion',data);
+    })
+    socket.on('giveQuestion',function(data){
+      io.to('Board').emit('giveQuestion',data);
+    })
+    socket.on('restart',function(data){
+      data = require('./data')
+      scores = {
+        red:0,
+        blue:0,
+        green:0,
+        orange:0
+      }
+
+      io.emit('restart');
     })
 
 });
