@@ -1,55 +1,55 @@
 {
-  "Category_1":{
+  "Conflicting Information":{
     "200":{
-      "answer":"Give you up",
-      "question":"What I am never going to do?",
+      "answer":"What type of conflict is a land dispute?",
+      "question":"As simple conflict",
       "team":""
     },
     "400":{
-      "answer":"Give you up",
-      "question":"What I am never going to do?",
+      "answer":"Jealous of a co-worker getting a pay raise, an employee of a company shoots down his co-worker’s product designs.  What type of conflict is this?",
+      "question":"Ego conflict",
       "team":""
     },
     "600":{
-      "answer":"Give you up",
-      "question":"What I am never going to do?",
+      "answer":"A group wants to raise money for a charity.  One member suggests an extensive internet campaign.  Another member proposes a bake sale.  What type of simple conflict is this?",
+      "question":"Process conflict",
       "team":""
     },
     "800":{
-      "answer":"Give you up",
-      "question":"What I am never going to do?",
+      "answer":"Two employees of a construction company are debating how to lay a foundation.  One employee insists he knows the most efficient way as he has been on many similar jobs before.  What is the cause of this conflict?",
+      "question":"Knowledge",
       "team":""
     },
     "1000":{
-      "answer":"Give you up",
-      "question":"What I am never going to do?",
+      "answer":"What are the 5 causes of conflict?",
+      "question":"Perception, Personality, Knowledge, Culture, Power and Status, and Procedural Expectation",
       "team":""
     }
   },
-  "Category_2":{
+  "Horrible Bosses":{
     "200":{
-      "answer":"Give you up",
-      "question":"What I am never going to do?",
+      "answer":"Stems from a position that isn’t clear",
+      "question":"What is a Pseudo Conflict?",
       "team":""
     },
     "400":{
-      "answer":"Give you up",
-      "question":"What I am never going to do?",
+      "answer":"Groupthink",
+      "question":"What is something that prevents good, idea generating conflict?",
       "team":""
     },
     "600":{
-      "answer":"Give you up",
-      "question":"What I am never going to do?",
+      "answer":"Horrible seating arrangements",
+      "question":"What is a way to ensure ego conflicts at a meeting?",
       "team":""
     },
     "800":{
-      "answer":"Give you up",
-      "question":"What I am never going to do?",
+      "answer":"When workers are often pitted against one another to the point where they resent each other and their boss",
+      "question":"What is too much conflict?",
       "team":""
     },
     "1000":{
-      "answer":"Give you up",
-      "question":"What I am never going to do?",
+      "answer":"Conflict is a bad thing",
+      "question":"What is false?",
       "team":""
     }
   },
@@ -107,9 +107,9 @@
       "team":""
     }
   },
-  "Category_5":{
+  "Cinematic Conflict":{
     "200":{
-      "answer":"Give you up",
+      "answer":"",
       "question":"What I am never going to do?",
       "team":""
     },
