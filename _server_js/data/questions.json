@@ -53,74 +53,74 @@
       "team":""
     }
   },
-  "Category_3":{
+  "In the mix":{
     "200":{
-      "answer":"Give you up",
-      "question":"What I am never going to do?",
+      "answer":"Having the role of central negative is also known as playing… ",
+      "question":"What is “devil's advocate”?",
       "team":""
     },
     "400":{
-      "answer":"Give you up",
-      "question":"What I am never going to do?",
+      "answer":"An anonymous system to help brainstorm ideas and weed out ego conflict",
+      "question":"What are computer mediated messages?",
       "team":""
     },
     "600":{
-      "answer":"Give you up",
-      "question":"What I am never going to do?",
+      "answer":"Ruins interpersonal relationships and group morale",
+      "question":"What is Unresolved Conflict?",
       "team":""
     },
     "800":{
-      "answer":"Give you up",
-      "question":"What I am never going to do?",
+      "answer":"A decision about decision",
+      "question":"What is Metadiscussion ?",
       "team":""
     },
     "1000":{
-      "answer":"Give you up",
-      "question":"What I am never going to do?",
+      "answer":"The 5 conflict management styles",
+      "question":"What are Avoidance, Accommodation, Collaboration, Compromise, Competition?",
       "team":""
     }
   },
-  "Category_4":{
+  "Straight outta Beebe":{
     "200":{
-      "answer":"Give you up",
-      "question":"What I am never going to do?",
+      "answer":"To have high concern for both yourself and others in your group",
+      "question":"What is collaborate?",
       "team":""
     },
     "400":{
-      "answer":"Give you up",
-      "question":"What I am never going to do?",
+      "answer":"The illusion of agreement within groups",
+      "question":"What is groupthink?",
       "team":""
     },
     "600":{
-      "answer":"Give you up",
-      "question":"What I am never going to do?",
+      "answer":"Some conflict is inevitable in groups, but this does not mean that all group discussions are doomed to end in disagreement. Conflict can be managed.  “.....” occurs when all group members support and are committed to a decision",
+      "question":"What is Consensus?",
       "team":""
     },
     "800":{
-      "answer":"Give you up",
-      "question":"What I am never going to do?",
+      "answer":"An expressed struggle between at least two interdependent people who perceive incompatible goals, scarce resources, and interference from others to achieve specific goals ",
+      "question":"What is conflict?",
       "team":""
     },
     "1000":{
-      "answer":"Give you up",
-      "question":"What I am never going to do?",
+      "answer":"When you do X, in situation Y, I feel Z",
+      "question":"What is the X,Y,Z formula?",
       "team":""
     }
   },
   "Cinematic Conflict":{
     "200":{
-      "answer":"",
-      "question":"What I am never going to do?",
+      "answer":"The conflict between Juror #3(The last holdout) and Juror #5(The less well off man)",
+      "question":"What is Simple Conflict",
       "team":""
     },
     "400":{
-      "answer":"Give you up",
-      "question":"What I am never going to do?",
+      "answer":"The conflict between Kovack and everyone else regarding throwing Willi overboard",
+      "question":"What is simple Conflict?",
       "team":""
     },
     "600":{
-      "answer":"Give you up",
-      "question":"What I am never going to do?",
+      "answer":"The conflict management style used by everyone when the turned away from the Racist Juror",
+      "question":"What is conflict avoidance?",
       "team":""
     },
     "800":{
@@ -129,8 +129,8 @@
       "team":""
     },
     "1000":{
-      "answer":"Give you up",
-      "question":"What I am never going to do?",
+      "answer":"The conflict management style used by Juror #8 after he called for a secret ballot and said he would not stand in the way of a guilty verdict.",
+      "question":"What is conflict avoidance?",
       "team":""
     }
   }
